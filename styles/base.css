@@ -29,11 +29,15 @@ nav a {
     padding: 10px;
     border-radius: 5px;
 }
+nav a:hover {
+    color: #e58231;
+}
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
+    max-width: auto;
 }
 
 section {
