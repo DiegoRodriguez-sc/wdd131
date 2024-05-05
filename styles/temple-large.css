@@ -1,0 +1,32 @@
+:root {
+    --main-color: #E79999;
+    --text-color: #ffffff;
+    --text-second-color:#000000;
+    --text-hover-color: #333333;
+    --font: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 37.5em) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: var(--main-color);
+    }
+    #menu {
+        display: none;
+    }
+    
+    .navigation {
+		flex-direction: row;
+	}
+
+	.navigation a {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.stuff {
+		margin: 1rem auto;
+	}
+}
