@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Diego Rodriguez">
+    <meta name="author" content="Diego Rodriguez">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WDD 131 - Dynamic Web Fundamentals - Diego Rodriguez</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Bolivia</h1>
+        </header>
+        <main>
+            <section class="image">
+                <img src="./images/background_mobile.webp" alt="mobile image">
+            </section>
+            <section class="image_hero">
+            </section>
+            <div class="card data">
+                <div class="title_box"><h2>Data</h2></div>
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <td class="label">Area:</td>
+                        <td>1,098,581 sq Km</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Population:</td>
+                        <td>11,513,100</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Capital:</td>
+                        <td>Sucre</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Language:</td>
+                        <td>Spanish, Quechua</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Currency:</td>
+                        <td>Boliviano (BOB)</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Time zone:</td>
+                        <td>GMT-4</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Calling code:</td>
+                        <td>+591</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Internet TLD:</td>
+                        <td>.bo</td>
+                    </tr>
+                </table>
+            </div>
+        
+            <div class="card weather">
+                <div class="title_box"><h2>Weather ⛅</h2></div>
+                <h2>Weather</h2>
+                <img src="./images/sunny_icon.svg" width="100px" alt="weather image">
+                <table>
+                    <tr>
+                        <td class="label">Temperature:</td>
+                        <td>25°C</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Condition:</td>
+                        <td>Sunny</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Wind:</td>
+                        <td>10 km/h</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Wind Chill:</td>
+                        <td>9.8°C</td>
+                    </tr>
+                </table>
+            </div>
+        </main>
+    
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Diego Rodriguez , Argentina</p>
+            <p class="text" id="lastModified"></p>
+        </footer>
+    </div>
+    <script defer src="scripts/place.js"></script>
+</body>
+</html>
