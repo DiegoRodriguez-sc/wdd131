@@ -19,9 +19,11 @@
         </header>
         <main>
             <section class="image">
-                <img src="./images/background_mobile.webp" alt="mobile image">
-            </section>
-            <section class="image_hero">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./images/background_desktop.webp" />
+                    <source media="(max-width: 992px)" srcset="./images/background_mobile.webp" />
+                    <img src="./images/background_mobile.webp" alt="image from bolivia" />
+                </picture>
             </section>
             <div class="card data">
                 <div class="title_box"><h2>Data</h2></div>
@@ -63,7 +65,7 @@
             </div>
         
             <div class="card weather">
-                <div class="title_box"><h2>Weather ⛅</h2></div>
+                <div class="title_box"><h2>Weather</h2></div>
                 <h2>Weather</h2>
                 <img src="./images/sunny_icon.svg" width="100" alt="weather image">
                 <table>
