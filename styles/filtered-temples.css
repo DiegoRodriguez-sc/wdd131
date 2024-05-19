@@ -107,7 +107,6 @@ header h1 {
     padding: 1rem;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;
     display: flex;
     flex-direction: column;
     justify-content: center;
