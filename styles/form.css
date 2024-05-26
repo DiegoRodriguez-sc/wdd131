@@ -65,22 +65,22 @@ input[type="text"], input[type="date"], select, textarea {
 .rating label {
     font-size: 2em;
     cursor: pointer;
-    color: #ddd;
+    color: #181717;
 }
 
 .rating input:checked ~ label {
-    color: gold;
+    color: rgb(255, 0, 0);
 }
 
 .rating label:hover,
 .rating label:hover ~ label,
 .rating input:checked ~ label {
-    color: gold;
+    color: red;
 }
 
 .rating input:checked + label:hover,
 .rating input:checked + label:hover ~ label {
-    color: gold;
+    color: red;
 }
 
 input[type="submit"] {
