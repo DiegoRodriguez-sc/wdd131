@@ -41,16 +41,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const flowerImage = document.createElement('img');
             flowerImage.loading = 'lazy';
             flowerImage.src = flower.image || './images/flor_no_available.webp';
-            flowerImage.alt = flower.name || 'Unknown';
+            flowerImage.onerror = function() {
+                this.onerror = null; 
+                this.src = './images/flor_no_available.webp';
+            };
+            flowerImage.alt = flower.name || "Sorry, we don't have information about this flower's name.";
 
             const flowerName = document.createElement('h3');
             const flowerLink = document.createElement('a');
             flowerLink.href = `flower-detail.html?id=${flower.name}`;
-            flowerLink.textContent = flower.name || 'Unknown';
+            flowerLink.textContent = flower.name || "Sorry, we don't have information about this flower's name.";
             flowerName.appendChild(flowerLink);
 
             const flowerScientificName = document.createElement('p');
-            flowerScientificName.textContent = flower.cientific_name || 'Unknown';
+            flowerScientificName.textContent = flower.cientific_name || "Sorry, we don't have information about this flower's scientific name.";
 
             const favoriteIcon = document.createElement('i');
             favoriteIcon.classList.add('favorite-icon', 'fas', 'fa-heart');

@@ -25,13 +25,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const displayFlowerOfTheDay = () => {
     const flower = getFlowerOfTheDay();
     const flowerHTML = `
-      <img loading="lazy" src="${flower.image}" alt="Flower of the Day">
+      <img loading="lazy" src="${flower.image}" alt="Flower of the Day" onerror="this.onerror=null; this.src='./images/flor_no_available.webp'">
       <div class="flower-info">
         <h3>${flower.name}</h3>
         <p><em>${flower.cientific_name}</em></p>
         <p><strong>Height:</strong> ${flower.characteristics.height}</p>
         <p class="flower-info-desktop"> <strong>Description:</strong> ${flower.characteristics.data}</p>
-        <p><strong>Meaning:</strong> ${flower.characteristics.meaning}</p>
+        <p><strong>Meaning:</strong> ${flower.characteristics.meaning ? flower.characteristics.meaning : "Sorry, we don't have information about this flower's meaning." }</p>
       </div>
     `;
     flowerOfTheDayContainer.innerHTML = flowerHTML;
