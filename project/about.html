@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Flower Haven, our mission, vision, and how you can contact us.">
+    <meta name="author" content="Diego Rodriguez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Flower Haven - About Us</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flower Haven</h1>
+            <div class="burger">
+                <i class="fas fa-bars fa-2x"></i>
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <nav class="navbar">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="flowers.html">Flowers</a>
+                <a class="nav-link" href="about.html">About Us</a>
+            </nav>
+        </header>
+        <main>
+            <section class="about-us">
+                <h2>About Us</h2>
+                <p>At Flower Haven, we are passionate about the beauty and diversity of the floral world. Our goal is to share this passion with all our visitors, providing information and resources about a wide variety of flowers.</p>
+            </section>
+            <section class="mission">
+                <h2>Mission</h2>
+                <p>Our mission is to be your primary resource for everything related to flowers, from appreciation to floral design. We aim to inspire and educate our audience about the importance and beauty of flowers in our lives.</p>
+            </section>
+            <section class="vision">
+                <h2>Vision</h2>
+                <p>We envision a world where everyone has access to knowledge and inspiration to fully enjoy flowers. We strive to be the leading platform in floral content, connecting people worldwide through their shared love of flowers.</p>
+            </section>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error" id="name-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error" id="email-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <span class="error" id="message-error"></span>
+                    </div>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p><span id="brand">Flower Haven</span> &copy; <span id="currentyear"></span> Diego Rodriguez , Argentina</p>
+        </footer>
+    </div>
+    <script defer type="module" src="scripts/app.js"></script>
+    <script defer type="module" src="scripts/about.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@media (min-width: 769px) {
+    .burger {
+      display: none;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      background-color: transparent;
+      box-shadow: none;
+      position: static;
+      transition: none;
+      max-height: none;
+      opacity: 1;
+    }
+  
+    .flower-card_favorite {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+  
+    .flower-card_favorite img {
+      max-width: 40%;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    .flower-info {
+      text-align: left;
+      max-width: 60%;
+    }
+    
+    .flower-info-desktop{
+      display: block;
+    }
+
+
+    .library {
+      padding: 4rem 2rem;
+  }
+
+  .library h2 {
+      font-size: 2.5rem;
+  }
+
+  .flower-list {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 2rem;
+  }
+    
+  }
+  

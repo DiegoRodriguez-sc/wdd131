@@ -1,0 +1,222 @@
+:root {
+    --primary-color: #d9d4e7;
+    --secondary-color: #333;
+    --tertiary-color: #f4f4f4;
+    --highlight-color: #e91e63;
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    --font: 'Montserrat', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--tertiary-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .burger i {
+    display: none;
+  }
+  
+  .burger .fa-bars {
+    display: block;
+  }
+  
+  .burger.active .fa-bars {
+    display: none;
+  }
+  
+  .burger.active .fa-times {
+    display: block;
+  }
+  
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+  }
+  
+  .navbar.active {
+    display: flex;
+    max-height: 200px;
+    opacity: 1;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+  }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  footer {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+  }
+
+  footer #brand{
+    font-weight: bold;
+  }
+  
+  .hero {
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/hero-mobile.webp");
+    background-size: cover;
+    background-position: center;
+    color: var(--primary-color);
+    padding: 6rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+  }
+  
+  .flower-of-the-day {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .flower-of-the-day h2 {
+    font-size: 2rem;
+    margin-bottom: .7rem;
+  }
+  
+  .flower-card_favorite{
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    border: 3px solid #000000;
+  }
+  
+  .flower-card_favorite img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .flower-info h3 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .flower-info p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+.flower-info-desktop{
+    display: none;
+}
+  .favorites-carousel {
+    text-align: center;
+  }
+  
+  .favorites-carousel h2 {
+    font-size: 2rem;
+    margin-bottom: .1rem;
+  }
+  
+  .carousel {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+  }
+  
+  .carousel-not-favorites {
+    margin: auto;
+    width: 100%;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 3px solid #000000;
+    font-size: 1.2rem;
+  }
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 3px solid #000000;
+  }
+  
+  .carousel-item img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .flower-sections {
+    display: block;
+  }
+  
+  .flower-of-the-day, .favorites-carousel {
+    margin: 20px 0;
+  }
+  

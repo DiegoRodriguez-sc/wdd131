@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover a wide variety of exquisite flowers in our Flower Library.">
+    <meta name="author" content="Diego Rodriguez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Flower Library</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    <link rel="stylesheet" href="styles/flowers.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flower Haven</h1>
+            <div class="burger">
+                <i class="fas fa-bars fa-2x"></i>
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <nav class="navbar">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="flowers.html">Flowers</a>
+                <a class="nav-link" href="about.html">About</a>
+            </nav>
+        </header>
+        <main>
+            <section class="library">
+                <h2>Flower Library</h2>
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for flowers...">
+                    <button id="search-btn">Search</button>
+                </div>
+                <div class="flower-list" id="flower-list">
+                    <!-- Flower cards -->
+                </div>
+                <div class="pagination">
+                    <button id="prev-page" disabled>Previous</button>
+                    <span id="page-number">Page 1</span>
+                    <button id="next-page">Next</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p><span id="brand">Flower Haven</span> &copy; <span id="currentyear"></span> Diego Rodriguez , Argentina</p>
+        </footer>
+    </div>
+    <script defer type="module" src="scripts/app.js"></script>
+    <script defer type="module" src="scripts/data.js"></script>
+    <script defer type="module" src="scripts/flowers.js"></script>
+</body>
+</html>

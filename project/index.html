@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Flower Haven, your ultimate resource for exploring the enchanting world of flowers. Discover a wide variety of exquisite blooms, learn fascinating facts, and immerse yourself in the beauty of nature's finest creations. Whether you're a passionate gardener, a floral enthusiast, or simply seeking inspiration, Flower Haven is here to captivate your senses and deepen your appreciation for the floral kingdom.">
+    <meta name="author" content="Diego Rodriguez">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Flower Haven - Home</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Flower Haven</h1>
+            <div class="burger">
+                <i class="fas fa-bars fa-2x"></i>
+                <i class="fas fa-times fa-2x"></i>
+            </div>
+            <nav class="navbar">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="flowers.html">Flowers</a>
+                <a class="nav-link" href="about.html">About</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h2>Welcome to Flower Haven</h2>
+                <p>Your ultimate resource for exploring the enchanting world of flowers.</p>
+                <p>At Flower Haven, we believe in the magic of nature's finest creations. Discover a diverse array of exquisite blooms, from the classic beauty of roses to the exotic charm of orchids</p>
+            </section>
+            <div class="flower-sections">
+                <section class="flower-of-the-day">
+                    <h2>Flower of the Day</h2>
+                    <div class="flower-card_favorite">
+                    </div>
+                </section>
+                <section class="favorites-carousel">
+                    <h2>Favorites</h2>
+                    <div class="carousel">
+                        <!-- Favorites -->
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p><span id="brand">Flower Haven</span> &copy; <span id="currentyear"></span> Diego Rodriguez , Argentina</p>
+        </footer>
+    </div>
+    <script defer type="module" src="scripts/app.js"></script>
+    <script defer type="module" src="scripts/data.js"></script>
+</body>
+</html>
